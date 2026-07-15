@@ -1,3 +1,19 @@
+## Almanac generation
+The almanac of specular reflections is exposed in these class attributes of `SparkleAlmanac` and `FastSparkleAlmanac`:
+
+* #### Sorted by time:
+    `almanac_by_time: list[dict]`
+
+* #### Sorted by angular distance between $S$ and $S_i$, a proxy for the magnitude of reflection:
+    `almanac_by_separation: list[dict]`
+
+* #### Closest approaches of $S$ and $S_i$ for each day:
+    `closest_approaches: list[dict]`
+
+* #### Predicted duration of each reflection event:
+    `sparkle_durations: list[dict]`
+
+### For static facets or fixed-tilt solar panels
 ```python
 from fast import FastSparkleAlmanac
 
@@ -77,6 +93,7 @@ dualaxis_g17_almanac = FastSparkleAlmanac(
 )
 ```
 
+### For HSAT solar panels
 ```python
 from slow import SparkleAlmanac
 
