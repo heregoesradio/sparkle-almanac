@@ -1,0 +1,3 @@
+[submodule "heregoes"]
+	path = heregoes
+	url = https://github.com/heregoesradio/heregoes.git
